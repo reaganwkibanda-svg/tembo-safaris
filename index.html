@@ -75,38 +75,38 @@
         </div>
     </section>
 
-    <!-- 4. INTERACTIVE BOOKING CONSOLE -->
+     <!-- 4. INTERACTIVE BOOKING CONSOLE -->
     <section id="booking" class="booking-section">
         <div class="booking-container">
             <h2>Initialize Exploration Matrix</h2>
             <p>Secure your exclusive slot in the upcoming seasonal window.</p>
             
-            <form id="safari-form" onsubmit="handleBooking(event)">
+            <!-- Real-World Production Form Processing -->
+            <form id="safari-form" action="https://formspree.io/f/xrenzevl" method="POST">
+                
                 <div class="form-group">
                     <label for="destination">Select Destination</label>
-                    <select id="destination" required>
+                    <select id="destination" name="Destination" required>
                         <option value="">-- Choose Target Area --</option>
-                        <option value="serengeti">Serengeti Wild Luxe</option>
-                        <option value="kilimanjaro">Kilimanjaro Summit Elite</option>
-                        <option value="zanzibar">Zanzibar Spice Sanctuary</option>
+                        <option value="Serengeti Wild Luxe">Serengeti Wild Luxe</option>
+                        <option value="Kilimanjaro Summit Elite">Kilimanjaro Summit Elite</option>
+                        <option value="Zanzibar Spice Sanctuary">Zanzibar Spice Sanctuary</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
                     <label for="departure">Departure Window</label>
-                    <input type="date" id="departure" required>
+                    <input type="date" id="departure" name="Departure_Date" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="guests">Total Explorers</label>
-                    <input type="number" id="guests" min="1" max="12" value="1" required>
+                    <input type="number" id="guests" name="Total_Explorers" min="1" max="12" value="1" required>
                 </div>
                 
                 <button type="submit" class="submit-btn">PROCEED TO ECO-VALIDATION</button>
             </form>
             
-            <!-- Success/Feedback Message container controlled by JS -->
-            <div id="form-feedback" class="feedback-hidden"></div>
         </div>
     </section>
 
@@ -114,6 +114,6 @@
         <p>&copy; 2026 Tembo Safaris Ltd. Built for global progress. Designed in Tanzania.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
